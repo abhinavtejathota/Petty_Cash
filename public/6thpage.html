@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petty Cash Book</title>
+    <link rel="stylesheet" href="styles5.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-forms">
+        <div class="income-form">
+          <h3>Income Head</h3>
+          <select id="incomeHead">
+            <option value="Fee">Fee</option>
+            <option value="Rent">Rent</option>
+            <option value="Project">Project</option>
+          </select>
+          <input type="number" id="incomeAmount" placeholder="Amount" />
+          <textarea id="incomeDescription" placeholder="Description"></textarea>
+          <button class="submit-btn">Submit</button>
+        </div>
+        <div class="expense-form">
+          <h3>Expense Head</h3>
+          <select id="expenseHead">
+            <option value="Rent">Rent</option>
+            <option value="Bill">Bill</option>
+            <option value="EMI">EMI</option>
+            <option value="Tax">Tax</option>
+            <option value="Fees">Fees</option>
+            <option value="Interest">Interest</option>
+            <option value="Salary">Salary</option>
+            <option value="Stationary">Stationary</option>
+            <option value="Printing">Printing</option>
+            <option value="ADs">ADs</option>
+          </select>
+          <input type="number" id="expenseAmount" placeholder="Amount" />
+          <textarea
+            id="expenseDescription"
+            placeholder="Description"
+          ></textarea>
+          <button class="submit-btn">Submit</button>
+        </div>
+      </div>
+
+      <h2>Petty Cash Book</h2>
+      <table id="cashBook">
+        <tr>
+          <th>Date</th>
+          <th>Income Head</th>
+          <th>Amount</th>
+          <th>Expense Head</th>
+          <th>Amount</th>
+        </tr>
+        <!-- Table rows will be dynamically added here -->
+      </table>
+
+      <div class="side-lists">
+        <div class="income-heads">
+          <h4>Income Heads</h4>
+          <ul>
+            <li>Fee Receipt</li>
+            <li>Rent</li>
+            <li>Project</li>
+          </ul>
+        </div>
+        <div class="expense-heads">
+          <h4>Expense Heads</h4>
+          <ul>
+            <li>Rent</li>
+            <li>Bill</li>
+            <li>EMI</li>
+            <li>Tax</li>
+            <li>Fees</li>
+            <li>Interest</li>
+            <li>Salary</li>
+            <li>Stationary</li>
+            <li>Printing</li>
+            <li>ADs</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="script5.js"></script>
+  </body>
+</html>

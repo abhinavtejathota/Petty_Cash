@@ -1,0 +1,49 @@
+body {
+  background-color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 220px;
+  padding: 20px;
+}
+
+.btn {
+  background-color: #5ff0f0;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 30px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.previous {
+  background-color: #ffd700;
+  grid-column: 1 / -1;
+  justify-self: start;
+}
+
+.corner-decoration {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background: repeating-linear-gradient(
+    45deg,
+    #5ff0f0,
+    #5ff0f0 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}

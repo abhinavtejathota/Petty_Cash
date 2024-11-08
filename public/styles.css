@@ -1,0 +1,60 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.left-panel {
+    flex: 1;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-panel {
+    flex: 1;
+    background-image: url(https://app.gemoo.com/share/image-annotation/668085050285576192?codeId=vzaa1ajEb1Z35&origin=imageurlgenerator&card=668085047836102656);
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#joinButton {
+    background-color: #ffd700;
+    color: black;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .left-panel, .right-panel {
+        flex: none;
+        height: 50%;
+    }
+}

@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.input-forms {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.income-form,
+.expense-form {
+  width: 45%;
+}
+
+select,
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.submit-btn {
+  background-color: #f4a460;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.side-lists {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.income-heads,
+.expense-heads {
+  width: 45%;
+}
+
+ul {
+  padding-left: 20px;
+}
